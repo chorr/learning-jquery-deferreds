@@ -1,0 +1,8 @@
+{
+  "name": "learning-jquery-deferreds",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "~4.10.0",
+    "jquery-deferred": "~0.3.0"
+  }
+}

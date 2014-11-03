@@ -27,9 +27,9 @@ module.exports = function () {
         },
 
         emptyPromise: function () {
-            return $.Deferred(function (deferred) {
-                waitingForEmpty.push(deferred);
-            }).promise();
+            var deferred = $.Deferred();
+            waitingForEmpty.push(deferred);
+            return deferred.promise();
         }
     };
-}
+};

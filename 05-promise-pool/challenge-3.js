@@ -26,9 +26,12 @@ module.exports = function () {
             });
         },
 
-        emptyPromise: function () {
+        emptyPromise: function (checkImmediately) {
             return $.Deferred(function (deferred) {
                 waitingForEmpty.push(deferred);
+                if (checkImmediately) {
+                    deferred.resolve();
+                }
             }).promise();
         }
     };
