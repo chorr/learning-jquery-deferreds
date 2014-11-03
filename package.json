@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "dependencies": {
     "express": "~4.10.0",
-    "jquery-deferred": "~0.3.0"
+    "jquery-deferred": "~0.3.0",
+    "socket.io": "~1.2.0",
+    "socket.io-client": "~1.2.0"
   }
 }
